@@ -19,6 +19,7 @@ class Movies extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       routes: {
         Home.routeName: (_) => Home(),
         LoginScreen.routeName: (_) => LoginScreen(),
