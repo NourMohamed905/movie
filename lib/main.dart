@@ -10,6 +10,12 @@ class Movies extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(routes: {Home.routeName: (_) => Home() , LoginScreen.routeName:(_)=> LoginScreen()});
+    return MaterialApp(
+      routes: {
+        Home.routeName: (_) => Home(),
+        LoginScreen.routeName: (_) => LoginScreen(),
+      },
+      initialRoute: Home.routeName,
+    );
   }
 }
