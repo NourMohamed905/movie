@@ -9,7 +9,8 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double height = MediaQuery.sizeOf(context).height;
+    Size size = MediaQuery.sizeOf(context);
+
     TextTheme textTheme = Theme.of(context).textTheme;
     return Scaffold(
       body: Padding(
@@ -17,14 +18,9 @@ class LoginScreen extends StatelessWidget {
         child: Form(
           child: Column(
             children: [
-              Image.asset(
-                'assets/images/logo.png',
-                height: height * 0.4,
-                width: double.infinity,
-                fit: BoxFit.fill,
-              ),
+              Image.asset('assets/images/logo2.png', fit: BoxFit.fill),
               DefualtTextForm(hintText: 'Email', prefixIconImageName: 'email'),
-              SizedBox(height: 24),
+              SizedBox(height: size.height * 0.02),
               DefualtTextForm(
                 hintText: 'Password',
                 prefixIconImageName: 'password',
@@ -45,10 +41,10 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 24),
+              SizedBox(height: size.height * 0.02),
               DefualtElevatedButton(label: 'Login', onPressed: () {}),
 
-              SizedBox(height: 24),
+              SizedBox(height: size.height * 0.02),
 
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -71,12 +67,12 @@ class LoginScreen extends StatelessWidget {
                 ],
               ),
 
-              SizedBox(height: 24),
+              SizedBox(height: size.height * 0.02),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   SizedBox(
-                    width: 120,
+                    width: size.width * 0.3,
                     child: Divider(thickness: 1, color: AppTheme.primary),
                   ),
                   Padding(
@@ -89,20 +85,20 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    width: 120,
+                    width: size.width * 0.3,
                     child: Divider(thickness: 1, color: AppTheme.primary),
                   ),
                 ],
               ),
 
-              SizedBox(height: 24),
+              SizedBox(height: size.height * 0.02),
               DefualtElevatedButton(
                 iconName: 'google',
                 label: 'Login With Google',
                 onPressed: () {},
               ),
-              SizedBox(height: 20,),
-              LanguageIcons()
+              SizedBox(height: size.height * 0.03),
+              LanguageIcons(),
             ],
           ),
         ),
