@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movie/app_theme.dart';
+import 'package:movie/shared/app_theme.dart';
 import 'package:movie/auth/login_screen.dart';
 import 'package:movie/home.dart';
 import 'package:movie/onboarding/onboarding_screens.dart';
