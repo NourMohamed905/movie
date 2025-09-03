@@ -4,6 +4,7 @@ import 'package:movie/shared/app_theme.dart';
 import 'package:svg_flutter/svg.dart';
 import '../home.dart';
 import '../l10n/app_localizations.dart';
+import '../shared/defualt_elevated_button.dart';
 import '../shared/defualt_text_form.dart';
 import 'login_screen.dart';
 
@@ -111,8 +112,8 @@ class RegisterScreen extends StatelessWidget {
                 prefixIconImageName: 'phone',
               ),
               SizedBox(height: 20),
-              ElevatedButton(
-               child :Text( AppLocalizations.of(context)!.createAccount),
+              DefualtElevatedButton(
+               label : AppLocalizations.of(context)!.createAccount,
                 onPressed: () =>
                     Navigator.pushNamed(context, Home.routeName),
               ),

@@ -56,7 +56,7 @@ class _DefualtTextFormState extends State<DefualtTextForm> {
                   isObscur = !isObscur;
                   setState(() {});
                 },
-                icon: Icon(isObscur ? Icons.visibility_off : Icons.visibility),
+                icon: Icon(isObscur ? Icons.visibility_off : Icons.visibility,color: AppTheme.white,),
               )
             : null,
       ),
