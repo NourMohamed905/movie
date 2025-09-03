@@ -55,6 +55,16 @@ inputDecorationTheme: InputDecorationTheme(
   ),
 ),
 
+    appBarTheme: AppBarTheme(
+      backgroundColor: black,
+      foregroundColor: primary,
+      centerTitle: true,
+      titleTextStyle: TextStyle(
+        fontSize: 16,
+        fontWeight: FontWeight.w400,
+        color: primary,
+      ),
+    ),
 
 
 
