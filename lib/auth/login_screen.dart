@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movie/auth/forget_password.dart';
 import 'package:movie/shared/app_theme.dart';
 import 'package:movie/shared/defualt_elevated_button.dart';
 import 'package:movie/shared/defualt_text_form.dart';
@@ -34,7 +35,9 @@ class LoginScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).pushNamed(ForgetPassword.routeName);
+                        },
                         child: Text(
                           'Forget Password ?',
                           style: textTheme.labelLarge!.copyWith(
