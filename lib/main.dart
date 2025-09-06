@@ -39,9 +39,9 @@ class Movies extends StatelessWidget {
        ForgetPassword.routeName:(_)=> ForgetPassword(),
       },
       theme: AppTheme.darkTheme,
-      initialRoute: LoginScreen.routeName
-     /* initialRoute: RegisterScreen.routeName
-      seenOnboarding
+     // initialRoute: LoginScreen.routeName
+      initialRoute: RegisterScreen.routeName
+      /*seenOnboarding
           ? LoginScreen.routeName
           : OnboardingScreens.routeName,*/
     );
