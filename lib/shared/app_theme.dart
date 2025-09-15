@@ -12,48 +12,39 @@ class AppTheme {
 
   static ThemeData darkTheme = ThemeData(
     scaffoldBackgroundColor: black,
-  
 
-inputDecorationTheme: InputDecorationTheme(
-  
-    hintStyle: TextStyle(
-      fontSize:  18 ,
-      fontWeight: FontWeight.w400,
-      color: white,
-      
-      
-    ),
-  
-    
+    inputDecorationTheme: InputDecorationTheme(
+      hintStyle: TextStyle(
+        fontSize: 18,
+        fontWeight: FontWeight.w400,
+        color: white,
+      ),
 
-    filled: true,
-    fillColor:inputColor,
-    enabledBorder: OutlineInputBorder(
-      borderSide: BorderSide(width: 1 , color: gray),
-      borderRadius: BorderRadius.circular(15)
-      
-    
+      filled: true,
+      fillColor: inputColor,
+      enabledBorder: OutlineInputBorder(
+        borderSide: BorderSide(width: 1, color: gray),
+        borderRadius: BorderRadius.circular(15),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(15),
+        borderSide: BorderSide(width: 1, color: gray),
+      ),
+      errorBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(15),
+        borderSide: BorderSide(width: 1, color: red),
+      ),
+      focusedErrorBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(15),
+        borderSide: BorderSide(width: 1, color: red),
+      ),
     ),
-    focusedBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(15),
-      borderSide: BorderSide(width: 1, color:gray)
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: Colors.yellow,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+      ),
     ),
-    errorBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(15),
-      borderSide: BorderSide(width: 1, color: red)
-    ),
-     focusedErrorBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(15),
-      borderSide: BorderSide(width: 1, color: red)
-    ),
-    
-  ),
-  elevatedButtonTheme: ElevatedButtonThemeData(
-  style: ElevatedButton.styleFrom(
-    backgroundColor: Colors.yellow,
-    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15))
-  ),
-),
 
     appBarTheme: AppBarTheme(
       backgroundColor: black,
@@ -65,9 +56,10 @@ inputDecorationTheme: InputDecorationTheme(
         color: primary,
       ),
     ),
-
-
-
+    bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      backgroundColor: Color(0xFF282A28),
+      type: BottomNavigationBarType.fixed,
+    ),
 
     textTheme: TextTheme(
       titleLarge: TextStyle(
@@ -85,12 +77,12 @@ inputDecorationTheme: InputDecorationTheme(
         fontSize: 16,
         fontWeight: FontWeight.w400,
       ),
-      labelLarge:  TextStyle(
+      labelLarge: TextStyle(
         color: white,
         fontSize: 14,
         fontWeight: FontWeight.w400,
       ),
-       labelMedium:  TextStyle(
+      labelMedium: TextStyle(
         color: white,
         fontSize: 12,
         fontWeight: FontWeight.w400,
