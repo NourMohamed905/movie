@@ -6,6 +6,10 @@ import 'package:movie/shared/app_theme.dart';
 import 'package:movie/auth/login_screen.dart';
 import 'package:movie/home.dart';
 import 'package:movie/onboarding/onboarding_screens.dart';
+import 'package:movie/tabs/explore/explore_tab.dart';
+import 'package:movie/tabs/home/home_tab.dart';
+import 'package:movie/tabs/profile/profile_tab.dart';
+import 'package:movie/tabs/search/search_tab.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'l10n/app_localizations.dart';
 
@@ -31,16 +35,20 @@ class Movies extends StatelessWidget {
       locale: const Locale('en'),
 
       routes: {
-        Home.routeName: (_) =>  Home(),
-        LoginScreen.routeName: (_) =>  LoginScreen(),
-        OnboardingScreens.routeName: (_) =>  OnboardingScreens(),
-        RegisterScreen.routeName:(_)=>RegisterScreen(),
+        Home.routeName: (_) => Home(),
+        LoginScreen.routeName: (_) => LoginScreen(),
+        OnboardingScreens.routeName: (_) => OnboardingScreens(),
+        RegisterScreen.routeName: (_) => RegisterScreen(),
         UpdateProfileScreen.routeName: (_) => UpdateProfileScreen(),
-       ForgetPassword.routeName:(_)=> ForgetPassword(),
+        ForgetPassword.routeName: (_) => ForgetPassword(),
+        HomeTab.routeName: (_) => HomeTab(),
+        ExploreTab.routeName: (_) => ExploreTab(),
+        ProfileTab.routeName: (_) => ProfileTab(),
+        SearchTab.routeName: (_) => SearchTab(),
       },
       theme: AppTheme.darkTheme,
-     // initialRoute: LoginScreen.routeName
-      initialRoute: RegisterScreen.routeName
+      // initialRoute: LoginScreen.routeName
+      initialRoute: RegisterScreen.routeName,
       /*seenOnboarding
           ? LoginScreen.routeName
           : OnboardingScreens.routeName,*/
