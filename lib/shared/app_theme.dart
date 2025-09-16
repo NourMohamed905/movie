@@ -9,6 +9,9 @@ class AppTheme {
   static const red = Color(0xFFE82626);
   static const gray = Color(0x99FFFFFF);
   static const inputColor = Color(0xFF282A28);
+  static const backgrounddark = Color(0xFF282A28);
+  static const yellow = Color(0xFFF6BD00);
+
 
   static ThemeData darkTheme = ThemeData(
     scaffoldBackgroundColor: black,

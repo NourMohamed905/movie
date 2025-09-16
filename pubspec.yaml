@@ -16,7 +16,7 @@ dependencies:
   shared_preferences: ^2.5.3
   svg_flutter: ^0.0.1
   carousel_slider: ^5.1.1
-
+  flutter_bloc: ^8.1.5
 
   flutter_localizations:
     sdk: flutter
